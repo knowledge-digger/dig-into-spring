@@ -6,7 +6,6 @@
   * [🌿 IoC 컨테이너](core-technologies/ioc.md)
 * [Testing](testing/README.md)
   * [Mock Objects](testing/mock-objects.md)
-* [🔒 Security](security/README.md)
-  * [Authentication](security/authentication.md)
+* [🔒 Security](security.md)
 * [Spring Web MVC](spring-web-mvc/README.md)
   * [DispatcherServlet](spring-web-mvc/dispatcherservlet.md)
