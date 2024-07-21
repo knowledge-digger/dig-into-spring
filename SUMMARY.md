@@ -11,4 +11,4 @@
   * [DispatcherServlet](spring-web-mvc/dispatcherservlet.md)
 * [Spring Batch](spring-batch/README.md)
   * [Spring Batch Architecture](spring-batch/spring-batch-architecture.md)
-* [The Domain Language of Batch](the-domain-language-of-batch.md)
+  * [The Domain Language of Batch](spring-batch/the-domain-language-of-batch.md)
