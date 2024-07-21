@@ -7,20 +7,18 @@ description: READ.ME
 ## dig into spring
 
 우리는 실무에서 자주 사용하는 스프링 프레임워크를 보다 전문성있게 사용하기 위해\
-스프링 공식문서를 참고하여 파헤쳐보았습니다.
+스프링 공식문서들을 참고하여 파헤쳐보았습니다.
 
 ## version
 
 문서작성에 사용한 버전은 다음과 같습니다\
-spring framework - 6.1.11\
-spring boot - 3.3.1\
+spring framework - 6.1.11 / [https://docs.spring.io/spring-framework/reference/6.1.11/index.html](https://docs.spring.io/spring-framework/reference/6.1.11/index.html)\
+spring boot - 3.3.1 / [https://github.com/spring-projects/spring-boot/releases/tag/v3.3.1](https://github.com/spring-projects/spring-boot/releases/tag/v3.3.1)\
 java - jdk17
 
 ## example code
 
 사용한 예시 코드 - [https://github.com/knowledge-digger/dig-into-spring-code](https://github.com/knowledge-digger/dig-into-spring-code)
-
-
 
 ## participants
 
