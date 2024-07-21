@@ -9,3 +9,6 @@
 * [🔒 Security](security.md)
 * [Spring Web MVC](spring-web-mvc/README.md)
   * [DispatcherServlet](spring-web-mvc/dispatcherservlet.md)
+* [Spring Batch](spring-batch/README.md)
+  * [Spring Batch Architecture](spring-batch/spring-batch-architecture.md)
+* [The Domain Language of Batch](the-domain-language-of-batch.md)
