@@ -9,7 +9,7 @@ Spring 공식 문서에는 Security를 어떻게 설명하는지 한번 알아�
 
 > "Spring Security is a framework that provides <mark style="color:green;">**authentication**</mark>, <mark style="color:green;">**authorization**</mark>, and protection against <mark style="color:green;">**common attacks**</mark>."
 >
-> "Spring Security는 <mark style="color:green;">**인증(Authentication)**</mark>과 <mark style="color:green;">**권한 부여(authorization)**</mark> 및 <mark style="color:green;">**일반적인 공격**</mark>에 대한 보호를 제공하는 프레임워크이다."
+> "Spring Security는 <mark style="color:green;">**인증(Authentication)**</mark>과 <mark style="color:green;">**권한 부여(Authorization)**</mark> 및 <mark style="color:green;">**일반적인 공격**</mark>에 대한 보호를 제공하는 프레임워크이다."
 
 Spring 공식 문서에는 위와같이 설명하고 있습니다.\
 그렇다면 여기서 말하는 인증과 권한 부여는 무엇인지 알아 보겠습니다.
@@ -52,3 +52,15 @@ filter는 DispatcherServlet 앞 단계에서 실행되는 과정이며 요청을
 * JwtAuthenticationFilter\
   \- JWT(JSON Web Token) 기반 인증을 처리하는 필터입니다.\
   \- 클라이언트가 전송한 JWT 토큰을 검증하고, 유효한 토큰인 경우 사용자 정보를 SecurityContext에 저장합니다.
+
+다음은 권한부여와 관련된 Filter입니다.
+
+* FilterSecurityInterceptor\
+  \- 시큐리티의 필터 중 가장 마지막 순서에 위치한 필터입니다.\
+  \- 요청에 대한 접근 권한을 검사하여 요청 승인/거부를 판단합니다.\
+  \- 인증 객체가 없이 접근하는 경우 AuthenticationException을 발생시킵니다.\
+  \- 접근 권한이 없는 사용자로 판단하는 경우 AccessDeniedException을 발생시킵니다.
+* ExceptionTranslationFilter\
+  \- 승인 거부 발생 시 적절한 예외 처리를 수행합니다.\
+  \- 로그인 페이지로 리다이렉트하거나 403 Forbidden 응답을 반환합니다.
+
