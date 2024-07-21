@@ -4,7 +4,7 @@
 
 다음 그림은 확장성과 편의성을 지원하기 위한 계층 구조를 보여줍니다.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Spring Batch Layered Architecture</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Spring Batch Layered Architecture</p></figcaption></figure>
 
 구조에는 크게 Application, Batch Core, Batch Infrastructure가 있습니다.
 
