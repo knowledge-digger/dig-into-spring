@@ -71,7 +71,7 @@
 * **Hibernate**: Java에서 널리 사용되는 ORM 프레임워크로, 객체와 테이블 간의 매핑을 자동으로 처리합니다.
 * **Spring Data JPA**: Spring Framework와 함께 사용하는 JPA(Java Persistence API) 기반의 ORM 솔루션으로, JPA의 표준 기능을 제공하고, 더 나아가 고수준의 데이터 접근을 지원합니다.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * JPA는 ORM을 위한 자바 EE 표준이며 Spring-Data-JPA는 JPA를 쉽게 사용하기 위해 스프링에서 제공하고 있는 프레임워크이다.
 * 추상화 정도는 `Spring-Data-JPA -> Hibernate -> JPA`이다.
@@ -92,6 +92,6 @@
 
 *   ### JPA 동작 과정 <a href="#jpa" id="jpa"></a>
 
-    <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 * **개발자가 JPA를 사용하면, JPA 내부에서 JDBC API를 사용하여 SQL을 호출하여 DB와 통신한다**
 

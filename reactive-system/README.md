@@ -20,7 +20,7 @@
 * 유연성 : 시스템의 작업량이 변화 하더라도 응답성을 유지
 * 메세지 기반 : 소프트웨어 내부간 소통 방식. 비동기 형태 메세지
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 값(Value)  :&#x20;
 
