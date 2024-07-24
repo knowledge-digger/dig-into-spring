@@ -7,6 +7,7 @@
   * [스프링 테스트(Spring Test)](testing/spring-test.md)
   * [단위 테스트(Unit Test)](testing/unit-test/README.md)
     * [모의 객체(Mock Objects)](testing/unit-test/mock-objects.md)
+  * [통합 테스트(Integration Testing)](testing/integration-testing.md)
 * [🔒 Security](security.md)
 * [Spring Web MVC](spring-web-mvc/README.md)
   * [DispatcherServlet](spring-web-mvc/dispatcherservlet.md)
