@@ -3,6 +3,7 @@
 * [개요](README.md)
 * [🌱 Core Technologies](core-technologies/README.md)
   * [🌿 IoC 컨테이너](core-technologies/ioc.md)
+  * [☘️ Spring AOP (Aspect-Oriented Programming)](core-technologies/spring-aop-aspect-oriented-programming.md)
 * [Testing](testing/README.md)
   * [스프링 테스트(Spring Test)](testing/spring-test.md)
   * [단위 테스트(Unit Test)](testing/unit-test/README.md)
