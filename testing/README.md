@@ -30,7 +30,7 @@ description: 테스트 코드가 무엇인가? 왜 테스트 코드가 필요한
 \
 아래 V 모델(V-Model)은 **시스템 개발 과정을 시각화 한 모델**로 범위에 따라 테스트를 구분합니다.
 
-<img src="../.gitbook/assets/file.excalidraw.svg" alt="" class="gitbook-drawing">
+<img src="../.gitbook/assets/file.excalidraw.svg" alt="생명주기 V-모델" class="gitbook-drawing">
 
 우리는 **스프링을  사용**하여 서비스 개발 시 **테스트 코드를 작성**하여 그림처럼 구분화한 각 테스트 단계별\
 **테스트를 수행**할 수 있습니다.
