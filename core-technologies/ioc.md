@@ -72,9 +72,25 @@ Spring IoC컨테이너 자체는 이 Configuration Metadata가 작성되는 형�
 
 
 
+
+
+### ApplicationContext 란?
+
+
+
+{% hint style="info" %}
+**ApplicationContext란?**
+
 Spring Framework내의 **ApplicationContext 인터페이스**는 IoC 컨테이너를 나타냅니다.
 
+기존 Spring에서는 Bean의 생성과 관계 설정 등의 제어를 담당하는 IoC Container인 **Bean Factory** 가 존재하나, 이외의 추가적인 기능 이용의 이유로 Bean Factory를 상속받아 확장한 **Application Context**를 사용하게 됩니다.
+{% endhint %}
 
+<figure><img src="../.gitbook/assets/image (12).png" alt=""><figcaption><p>BeanFactory 를 Extends하여 생성된 Application Context</p></figcaption></figure>
+
+
+
+**ApplicationContext 구현체**
 
 **ApplicationContext 구현체로** AnnotationConfigApplicationContext, ClassPathXmlApplicationContext 및 FileSystemXmlApplicationContext, 웹 애플리케이션을 위한 WebApplicationContext등 이 존재합니다.
 
@@ -177,4 +193,5 @@ Lazy-initialization 은 실제 Bean이 처음 요청 시 Bean을 생성하도록
 
 **레퍼런스**
 
-[**https://docs.spring.io/spring-framework/docs/2.5.x/reference/beans.html**](https://docs.spring.io/spring-framework/docs/2.5.x/reference/beans.html)
+[**https://docs.spring.io/spring-framework/docs/2.5.x/reference/beans.html**](https://docs.spring.io/spring-framework/docs/2.5.x/reference/beans.html)\
+[**https://velog.io/@rg970604/spring%EA%B8%B0%EB%B3%B83.-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%99%80-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B9%88-BeanFactoryApplicationContextBeanDefinition**](https://velog.io/@rg970604/spring%EA%B8%B0%EB%B3%B83.-%EC%8A%A4%ED%94%84%EB%A7%81-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%EC%99%80-%EC%8A%A4%ED%94%84%EB%A7%81-%EB%B9%88-BeanFactoryApplicationContextBeanDefinition)
