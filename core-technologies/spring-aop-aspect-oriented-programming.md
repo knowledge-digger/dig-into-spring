@@ -86,19 +86,38 @@ Advice는 특정 어노테이션으로 횡단관심사의 실행 시점에 대�
 
 ### AOP의 구현 방법
 
-AOP의 적용 시점에 따라 세 가지로 구분 할 수 있다.
+AOP의 적용 시점에 따라 세 가지로 구분 할 수 있습니다.
 
-**AspectJ**는 컴파일 시와 클래스 로드 시 적용을 지원하고 있다.
+**AspectJ**는 컴파일 시와 클래스 로드 시 적용을 지원하고 있습니다.
+
+**Spring AOP**에서는 프록시 패턴 방식을 지원하고 있습니다다.
 
 > **AspectJ란?**\
 > AspectJ 는 자바에서 완벽한 AOP 솔루션 제공을 목표로 하는 기술이다
 
-#### 컴파일
+#### 1. 컴파일
 
-Ex. J.java -> J.class와 같이 파일이 컴파일 되는 시점에 AOP를 적용하는 것이다.
+Ex. J.java -> J.class와 같이 파일이 컴파일 되는 시점에 AOP를 적용하는 것입니다.
 
-#### 클래스 로드시
+#### 2. 클래스 로드시
+
+컴파일 방식과 달리 클래스 파일이 컴파일 되는 시점이 아닌 클래스 로더가 메모리 상에 클래스 파일을 업로드 시키는 시점에 AOP를 적용할 수 있습니다.
+
+#### 3. 프록시 패턴
+
+Spring AOP에서 사용하는 방식입니다.
+
+타겟 클래스를 부가기능을 제공하는 프록시로 감싸 실행하는 방식입니다.
+
+해당 프록시 패턴은 Spring에서 IoC와 DI를 사용하기에 가능한 방식입니다.
 
 
 
-#### 프록시 패턴
+
+
+### Spring AOP vs AspectJ
+
+
+
+<table><thead><tr><th width="111">비고</th><th>Spring AOP</th><th>AspectJ</th></tr></thead><tbody><tr><td>목표</td><td>간단한 AOP기능 제공</td><td>완벽한 AOP기능 제공</td></tr><tr><td>Join Point</td><td>메서드 레벨만 지원</td><td>생성자, 필드, 메서드 등 다양하게 지원</td></tr><tr><td>Weaving</td><td>런타임 시에만 가능</td><td>complete-time, post-complete, load-time제공</td></tr><tr><td>대상</td><td>Spring Container가 관리하는 Bean에만 적용가능</td><td>모든 Java Object적용 가능</td></tr></tbody></table>
+
