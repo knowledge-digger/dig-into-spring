@@ -121,3 +121,9 @@ Spring AOP에서 사용하는 방식입니다.
 
 <table><thead><tr><th width="111">비고</th><th>Spring AOP</th><th>AspectJ</th></tr></thead><tbody><tr><td>목표</td><td>간단한 AOP기능 제공</td><td>완벽한 AOP기능 제공</td></tr><tr><td>Join Point</td><td>메서드 레벨만 지원</td><td>생성자, 필드, 메서드 등 다양하게 지원</td></tr><tr><td>Weaving</td><td>런타임 시에만 가능</td><td>complete-time, post-complete, load-time제공</td></tr><tr><td>대상</td><td>Spring Container가 관리하는 Bean에만 적용가능</td><td>모든 Java Object적용 가능</td></tr></tbody></table>
 
+
+
+**레퍼런스**
+
+[**https://amaran-th.github.io/Spring/\[Spring\]%20AOP/**](https://amaran-th.github.io/Spring/\[Spring]%20AOP/)\
+[**https://naveen-metta.medium.com/a-deep-dive-into-aop-in-spring-unveiling-the-power-of-aspect-oriented-programming-c6619aeb2dc4**](https://naveen-metta.medium.com/a-deep-dive-into-aop-in-spring-unveiling-the-power-of-aspect-oriented-programming-c6619aeb2dc4)

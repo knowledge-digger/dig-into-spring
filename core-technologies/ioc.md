@@ -173,3 +173,8 @@ Lazy-initialization 은 실제 Bean이 처음 요청 시 Bean을 생성하도록
 
 다만 Lazy-Initialization의 경우 요청 시 Bean의 생성이 되므로 애플리케이션 시작 시 식별할 수 있는 문제를 인지 불가능 하다는 단점이 있습니다.
 
+
+
+**레퍼런스**
+
+[**https://docs.spring.io/spring-framework/docs/2.5.x/reference/beans.html**](https://docs.spring.io/spring-framework/docs/2.5.x/reference/beans.html)
