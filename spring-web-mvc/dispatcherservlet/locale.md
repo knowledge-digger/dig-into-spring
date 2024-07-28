@@ -6,7 +6,11 @@ description: 이 페이지에서는 Locale Resolver에 대해 설명합니다.
 
 Locale Resolver는 어플리케이션에 다국어 처리가 필요한 경우 사용할 수 있습니다.&#x20;
 
-Spring Web MVC 에서는 3가지의 기본 Resolver 를 제공하고 있습니다.&#x20;
+Locale Resolver는 DispatchServlet의 render() 메서드 안에서 viewname 과 locale을 통해 실행시킬 View를 찾고 render를 실행시킵니다.
+
+
+
+기본적으로Spring Web MVC 에서는 3가지의 기본 Resolver 를 제공하고 있습니다.&#x20;
 
 1. Header Resolver Header Resolver는 클라이언트로 부터 전송된 accept-language 를 사용하여 Locale 를 설정합니다. 일반적으로 accept-language 는 클라이언트의 운영체제 Locale과 같습니다.&#x20;
 2. Cookie Resolver Cookie Resolver는 쿠키를 통해 Locale를 설정하거나, 설정된 Locale 를 가져올 수 있다.&#x20;

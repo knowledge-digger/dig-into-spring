@@ -16,7 +16,6 @@
 * [Spring Web MVC](spring-web-mvc/README.md)
   * [DispatcherServlet](spring-web-mvc/dispatcherservlet/README.md)
     * [Locale](spring-web-mvc/dispatcherservlet/locale.md)
-    * [Theme (Deprecated)](spring-web-mvc/dispatcherservlet/theme-deprecated.md)
     * [Multipart](spring-web-mvc/dispatcherservlet/multipart.md)
     * [Exception](spring-web-mvc/dispatcherservlet/exception.md)
     * [View Resolution](spring-web-mvc/dispatcherservlet/view-resolution.md)
