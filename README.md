@@ -12,9 +12,8 @@ description: READ.ME
 ## version
 
 문서작성에 사용한 버전은 다음과 같습니다\
-spring framework - 6.1.11 / [https://docs.spring.io/spring-framework/reference/6.1.11/index.html](https://docs.spring.io/spring-framework/reference/6.1.11/index.html)\
-spring boot - 3.3.1 / [https://github.com/spring-projects/spring-boot/releases/tag/v3.3.1](https://github.com/spring-projects/spring-boot/releases/tag/v3.3.1)\
-java - jdk17
+SpringBoot - 3.3.1\
+Java - jdk17
 
 ## example code
 
