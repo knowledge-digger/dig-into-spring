@@ -141,6 +141,13 @@ Spring Bean은 생성되고, 존재하고, 적용되는 범위를 Scope를 통�
 
 Spring Bean이 Singleton 객체 인 경우 여러 Thread에서 Singleton 객체의 상태를 가져다 쓸 때 해당 Bean의 상태를 항상 예측하는 것이 불가 하기 때문에 상태 값을 가지면 안됩니다.
 
+{% hint style="danger" %}
+**Singleton Pattern에 무상태(Stateless)가 필요한 이유?**\
+
+
+하나의 객체를 공유하는 싱글톤 패턴의 특성 상 여러 개의 Thread가 하나의 객체를 참조하는 경우 제대로 된 상태 값을 참조하지 못하는 경우가 발생할 수 있으므로 Singleton Scope를 갖는 Spring Bean의 경우 무상태(Stateless)로 존재하여야 합니다.
+{% endhint %}
+
 
 
 #### Prototype Scope

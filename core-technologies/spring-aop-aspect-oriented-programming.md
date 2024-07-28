@@ -44,7 +44,61 @@ AOP는 <mark style="color:blue;">횡단 관심사의 분리를 허용함으로�
 **AOP**는 프로그램 구조에 대한 또 다른 사고 방식을 제공함으로써 객체 지향 프로그래밍(**OOP**)을 보완합니다.
 {% endhint %}
 
+
+
 ### OOP(Object Oriented Programming), 객체 지향 프로그래밍이란?
 
 
 
+{% hint style="info" %}
+공통의 목적이 있는 데이터와 동작을 묶어 **하나의 객체로 정의**하는 프로그래밍 방식입니다.&#x20;
+
+어플리케이션을 구성하는 요소들을 객체로 인식하고, 객체들을 유기적으로 연결하여 프로그래밍 하는 것을 말합니다.
+{% endhint %}
+
+#### OOP의 한계점
+
+횡단관심사의 발생 : 로깅, 성능검사, 권한 체크 등과 같은 인프라 로직을 어플리케이션 전반적으로 적용하는 방식은 OOP의 방식으로 해결이 어렵습니다.&#x20;
+
+즉, 어떤 프로그램 구조에 대해서 다른 생각의 방향을 제시함으로써 **AOP가 OOP를 보완**하는 것입니다.
+
+
+
+### AOP의 용어
+
+<table><thead><tr><th width="118">구분</th><th>내용</th></tr></thead><tbody><tr><td>Target</td><td>어떤 대상에 부가기능을 부여할 것인지 의미<br>즉, 부가기능이 부여되는 대상</td></tr><tr><td>Advice </td><td><p>어떤 부가기능을 부가적으로 부여할 것인가를 의미</p><p>실질적인 부가기능을 담은 구현체를 의미</p><p>BEFORE, AROUND, AFTER의 실행 위치를 지정할 수 있다.</p></td></tr><tr><td>Join Point</td><td><p>어디에 적용할 것인가 의미<br>관심사를 구현한 <strong>코드를 끼워 넣을 수 있는 프로그램의 이벤트</strong>를 의미.</p><p>Ex. Call Events, Execution Events, Initialization Events</p></td></tr><tr><td>Point Cut</td><td><p>실제 Advice가 적용될 지점을 의미<br>Join Point의 상세한 스펙을 정의한것이다.</p><p>관심사가 주 프로그램의 <strong>어디에 횡단될 것인지를 지정</strong>하는 문장이다.</p><p>Ex. Before call</p></td></tr></tbody></table>
+
+
+
+#### Advice Annotation
+
+Advice는 특정 어노테이션으로 횡단관심사의 실행 시점에 대해 5가지로 정의할 수 있습니다.
+
+<table><thead><tr><th width="191">정의</th><th>실행시점</th></tr></thead><tbody><tr><td>Before</td><td>메서드 호출되기 전</td></tr><tr><td>AfterReturning</td><td>메서드 실행 후 성공적인 결과값 리턴시</td></tr><tr><td>AfterThrowing</td><td>실행시점에 Exception이 발생한 경우</td></tr><tr><td>After</td><td>Before, AfterReturning에 상관없이 메서드 종료 시</td></tr><tr><td>Around</td><td>메서드 실행 전 후로 실행 가능</td></tr></tbody></table>
+
+
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>AOP의 적용 원리</p></figcaption></figure>
+
+
+
+
+
+### AOP의 구현 방법
+
+AOP의 적용 시점에 따라 세 가지로 구분 할 수 있다.
+
+**AspectJ**는 컴파일 시와 클래스 로드 시 적용을 지원하고 있다.
+
+> **AspectJ란?**\
+> AspectJ 는 자바에서 완벽한 AOP 솔루션 제공을 목표로 하는 기술이다
+
+#### 컴파일
+
+Ex. J.java -> J.class와 같이 파일이 컴파일 되는 시점에 AOP를 적용하는 것이다.
+
+#### 클래스 로드시
+
+
+
+#### 프록시 패턴

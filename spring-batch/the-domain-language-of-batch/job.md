@@ -8,7 +8,7 @@ description: 이 페이지에서는 Spring Batch의 job에 대해 설명합니�
 
 다음 다이어그램은 스프링 배치의 도메인 언어를 구성하는 핵심 개념을 나타냅니다.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>Batch Stereotypes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Batch Stereotypes</p></figcaption></figure>
 
 
 
@@ -44,7 +44,7 @@ Job 하나는 1\~n개의 step을 가지고 있으며,
 
 따라서 각 `JobInstance`는 실행 결과를 **여럿 가질 수** 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Job Hierarchy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Job Hierarchy</p></figcaption></figure>
 
 #### 1.2 **JobParameters**
 
