@@ -74,8 +74,6 @@ public class Cart {
     @ManyToMany
     private Set<Food> foods = new HashSet<>();
 
-    // constructors, getters and setters
-
     public Cart(Long clientId) {
         this.clientId = clientId;
     }
@@ -100,8 +98,6 @@ public class Food {
     private Long id;
 
     private String name;
-
-    // constructors, getters and setters
 }
 
 ```
