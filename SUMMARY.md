@@ -27,6 +27,7 @@
     * [Step](spring-batch/the-domain-language-of-batch/step.md)
   * [Configuring a Step](spring-batch/configuring-a-step/README.md)
     * [Chunk-oriented Processing](spring-batch/configuring-a-step/chunk-oriented-processing.md)
+    * [TaskletStep](spring-batch/configuring-a-step/taskletstep.md)
 * [Reactive System](reactive-system/README.md)
   * [리액티브 프로그래밍](reactive-system/undefined/README.md)
     * [리액티브 프로그래밍의 구성 요소](reactive-system/undefined/undefined.md)

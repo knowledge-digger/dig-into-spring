@@ -16,7 +16,7 @@ description: 이 페이지에서는 Spring Batch의 step에 대해 설명합니�
 
 아래 그림처럼 `job`이 고유 `JobExecution`이 있듯, `step`도 각자의 `stepExecution`이 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Job Hierarchy With Steps</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p><a href="https://docs.spring.io/spring-batch/reference/domain.html">https://docs.spring.io/spring-batch/reference/domain.html</a></p></figcaption></figure>
 
 2.1 **StepExecution**
 

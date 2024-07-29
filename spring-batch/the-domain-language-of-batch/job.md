@@ -8,7 +8,7 @@ description: 이 페이지에서는 Spring Batch의 job에 대해 설명합니�
 
 다음 다이어그램은 스프링 배치의 도메인 언어를 구성하는 핵심 개념을 나타냅니다.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Batch Stereotypes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p><a href="https://docs.spring.io/spring-batch/reference/domain.html">https://docs.spring.io/spring-batch/reference/domain.html</a></p></figcaption></figure>
 
 
 
@@ -44,7 +44,7 @@ Job 하나는 1\~n개의 step을 가지고 있으며,
 
 따라서 각 `JobInstance`는 실행 결과를 **여럿 가질 수** 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Job Hierarchy</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><a href="https://docs.spring.io/spring-batch/reference/domain.html">https://docs.spring.io/spring-batch/reference/domain.html</a></p></figcaption></figure>
 
 #### 1.2 **JobParameters**
 
@@ -56,7 +56,7 @@ Job 하나는 1\~n개의 step을 가지고 있으며,
 
 `JobPatameters` 는 배치 job을 시작하는데 사용하는 파라미터 셋을 가지고 있는 객체입니다. 아래 그림처럼 실행 중인 job을 **식별**하거나 **참조 데이터**로도 사용할 수 있습니다.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Job Parameters</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p><a href="https://docs.spring.io/spring-batch/reference/domain.html">https://docs.spring.io/spring-batch/reference/domain.html</a></p></figcaption></figure>
 
 앞에 나온 예시에서는 각 1월 1일, 1월 2일 총 두 개의 인스턴스가 있는데, `job`은 하나지만 `JobPatameter` 는 2개 입니다.
 
