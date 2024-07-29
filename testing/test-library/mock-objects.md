@@ -69,9 +69,3 @@ private UserInterface myInterface;
 MyService myService= mock(MyService.class);
 ```
 {% endcode %}
-
-### **3. @Spy**
-
-
-
-### **4. @injectMocks**
