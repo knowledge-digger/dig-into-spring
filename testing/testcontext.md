@@ -94,3 +94,4 @@ public class MyServiceTest {
 
 위 처럼 여러개의 테스트가 캐싱된한 개의 애플리케이션 컨텍스트를 공유하여  테스트를 수행합니다.
 
+[https://youtu.be/N06UeRrWFdY?t=160](https://youtu.be/N06UeRrWFdY?t=160)
