@@ -14,8 +14,6 @@
 
 * **JDBC (Java Database Connectivity)**: Java에서 데이터베이스와 연결하기 위한 기본 API입니다. SQL 쿼리를 직접 작성하여 데이터베이스와 상호작용합니다.
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-
 **장점**:
 
 * **유연성**: 복잡한 쿼리와 데이터베이스 조작을 직접 제어할 수 있습니다.
@@ -39,8 +37,6 @@
 **주요 기술**:
 
 * **MyBatis**: SQL을 XML 파일이나 어노테이션으로 매핑하여 객체와 데이터베이스 간의 변환을 처리합니다.
-
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 **장점**:
 
@@ -68,14 +64,9 @@
 
 **주요 기술**:
 
-* **Hibernate**: Java에서 널리 사용되는 ORM 프레임워크로, 객체와 테이블 간의 매핑을 자동으로 처리합니다.
-* **Spring Data JPA**: Spring Framework와 함께 사용하는 JPA(Java Persistence API) 기반의 ORM 솔루션으로, JPA의 표준 기능을 제공하고, 더 나아가 고수준의 데이터 접근을 지원합니다.
+*   **Hibernate**: 대표적으로 사용되는 JPA의 구현체 프레임워크입니다.&#x20;
 
-<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-* JPA는 ORM을 위한 자바 EE 표준이며 Spring-Data-JPA는 JPA를 쉽게 사용하기 위해 스프링에서 제공하고 있는 프레임워크이다.
-* 추상화 정도는 `Spring-Data-JPA -> Hibernate -> JPA`이다.
-* Spring Data JPA, Spring Data MongoDB, Spring Data Redis등 Spring Data의 하위 프로젝트들은 findAll(), save()등을 동일한 인터페이스로 가지고 있기 때문에 저장소를 교체해도 기본적인 기능이 변하지않는다.
+    JPA표준을 준수하면서 많은 확장성과 유연성을 제공한다는 장점이 있습니다.
 
 **장점**:
 
@@ -87,11 +78,4 @@
 
 * **성능 문제**: 자동 매핑과 복잡한 쿼리 생성으로 인해 성능이 저하될 수 있습니다.
 * **학습 곡선**: ORM 프레임워크에 대한 이해와 설정이 필요합니다.
-
-
-
-*   ### JPA 동작 과정 <a href="#jpa" id="jpa"></a>
-
-    <figure><img src="../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
-* **개발자가 JPA를 사용하면, JPA 내부에서 JDBC API를 사용하여 SQL을 호출하여 DB와 통신한다**
 

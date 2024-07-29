@@ -36,4 +36,7 @@
     * [Flux](reactive-system/reactor/flux.md)
     * [Mono](reactive-system/reactor/mono.md)
 * [Spring Data](spring-data/README.md)
-  * [데이터베이스 접근방법](spring-data/undefined.md)
+  * [데이터베이스 접근방법](spring-data/undefined/README.md)
+    * [JDBC](spring-data/undefined/jdbc.md)
+    * [MyBatis](spring-data/undefined/mybatis.md)
+    * [JPA](spring-data/undefined/jpa.md)
