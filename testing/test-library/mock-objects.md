@@ -152,7 +152,7 @@ Mockito의 메소드는 스터빙, 목 객체 검증, 동작 확인 등을 위�
 `when` 메소드는 특정 메소드 호출에 대한 스터빙을 설정합니다.
 
 ```java
-java코드 복사when(mockedList.get(0)).thenReturn("first element");
+when(mockedList.get(0)).thenReturn("first element");
 ```
 
 #### thenReturn
@@ -160,7 +160,7 @@ java코드 복사when(mockedList.get(0)).thenReturn("first element");
 `thenReturn` 메소드는 특정 메소드 호출 시 반환 값을 설정합니다.
 
 ```java
-java코드 복사when(mockedList.get(0)).thenReturn("first element");
+when(mockedList.get(0)).thenReturn("first element");
 ```
 
 #### thenThrow
@@ -168,7 +168,7 @@ java코드 복사when(mockedList.get(0)).thenReturn("first element");
 `thenThrow` 메소드는 특정 메소드 호출 시 예외를 던지도록 설정합니다.
 
 ```java
-java코드 복사when(mockedList.get(1)).thenThrow(new RuntimeException());
+when(mockedList.get(1)).thenThrow(new RuntimeException());
 ```
 
 #### verify
@@ -176,7 +176,7 @@ java코드 복사when(mockedList.get(1)).thenThrow(new RuntimeException());
 `verify` 메소드는 특정 메소드가 호출되었는지 여부를 검증합니다.
 
 ```java
-java코드 복사verify(mockedList).get(0);
+verify(mockedList).get(0);
 ```
 
 #### any
@@ -184,7 +184,7 @@ java코드 복사verify(mockedList).get(0);
 `any` 메소드는 메소드 호출 시 임의의 인자를 허용합니다.
 
 ```java
-java코드 복사when(mockedList.get(anyInt())).thenReturn("element");
+when(mockedList.get(anyInt())).thenReturn("element");
 ```
 
 #### ArgumentCaptor
@@ -192,7 +192,7 @@ java코드 복사when(mockedList.get(anyInt())).thenReturn("element");
 `ArgumentCaptor`는 메소드 호출 시 전달된 인자를 캡처하여 검증할 수 있게 합니다.
 
 ```java
-java코드 복사ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
 verify(mockedList).add(captor.capture());
 assertEquals("first element", captor.getValue());
 ```
