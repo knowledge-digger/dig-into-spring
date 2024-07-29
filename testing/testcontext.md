@@ -92,6 +92,75 @@ public class MyServiceTest {
 
 <img src="../.gitbook/assets/file.excalidraw (1).svg" alt="컨텍스트 캐싱" class="gitbook-drawing">
 
-위 처럼 여러개의 테스트가 캐싱된한 개의 애플리케이션 컨텍스트를 공유하여  테스트를 수행합니다.
+위 처럼 여러개의 테스트가 캐싱된한 개의 애플리케이션 컨텍스트를 공유하여  테스트를 수행합니다.\
 
-[https://youtu.be/N06UeRrWFdY?t=160](https://youtu.be/N06UeRrWFdY?t=160)
+
+{% hint style="warning" %}
+같은 컨텍스트를 상속 받더라도 특정 객체가 Mocking 된 클래스의 경우 Bean 설정이 달라질 수 있음으로 스프링은 테스트가 서로 다른 설정이라고 판단합니다.
+{% endhint %}
+
+
+
+## **트랜잭션 관리** <a href="#management-transaction" id="management-transaction"></a>
+
+테스트는 독립적으로 실행되어야하고 반복적으로 수행 할 수 있어야합니다.\
+스프링에서는 데이터 베이스 초기화, 일관성 유지 등의 목적으로 **@Transactional**을 활용할 수 있습니다.
+
+#### &#x20;**@Transactional** <a href="#transactional-annotation" id="transactional-annotation"></a>
+
+스프링 테스트 컨텍스트 프레임워크에서 `@Transactional`은 AOP 기반이 아닌 방식으로 트랜잭션을 관리합니다. 테스트 클래스에서 `@Transactional`을 사용하면, 트랜잭션 매니저가 자동으로 빈으로 등록되어 있어야 하며, 트랜잭션은 `transactionManager`라는 이름의 빈을 사용합니다. 테스트 메서드에서 `@Transactional`을 사용하면 해당 트랜잭션은 강제로 롤백되도록 설정됩니다.
+
+
+
+#### **@Rollback** <a href="#rollback-annotation" id="rollback-annotation"></a>
+
+```java
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = AppConfig.class)
+public class MyServiceTest {
+
+    @Autowired
+    private MyService myService;
+
+    @Test
+    @Transactional
+    @Rollback(false) // 이 테스트 메서드는 트랜잭션을 커밋합니다.
+    public void testCommit() {
+        myService.performService();
+        // 트랜잭션이 커밋됩니다.
+    }
+}
+```
+
+`@Rollback` 어노테이션을 사용하면 트랜잭션의 롤백 동작을 제어할 수 있습니다. 기본적으로 테스트 메서드의 트랜잭션은 강제로 롤백되지만, `@Rollback(false)`로 설정하면 테스트 메서드가 끝난 후 트랜잭션이 커밋됩니다.
+
+#### &#x20;**@BeforeTransaction, @AfterTransaction** <a href="#before-after-transaction-annotaion" id="before-after-transaction-annotaion"></a>
+
+```java
+@RunWith(SpringRunner.class)
+@ContextConfiguration(classes = AppConfig.class)
+public class MyServiceTest {
+
+    @Autowired
+    private MyService myService;
+
+    @BeforeTransaction
+    public void beforeTransaction() {
+        // 트랜잭션이 시작되기 전에 실행됩니다.
+    }
+
+    @AfterTransaction
+    public void afterTransaction() {
+        // 트랜잭션이 종료된 후에 실행됩니다.
+    }
+
+    @Test
+    @Transactional
+    public void testService() {
+        myService.performService();
+        // 테스트 메서드 로직
+    }
+}
+```
+
+`@BeforeTransaction` 및 `@AfterTransaction` 어노테이션은 트랜잭션이 시작되기 전과 종료된 후에 실행되는 메서드를 정의할 때 사용됩니다. 이를 통해 트랜잭션 전후에 필요한 작업을 수행할 수 있습니다.
