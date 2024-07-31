@@ -78,7 +78,7 @@ Advice는 특정 어노테이션으로 횡단관심사의 실행 시점에 대�
 
 
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>AOP의 적용 원리</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>AOP의 적용 원리</p></figcaption></figure>
 
 
 
