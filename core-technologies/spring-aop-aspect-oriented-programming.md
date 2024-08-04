@@ -46,6 +46,17 @@ AOP는 <mark style="color:blue;">횡단 관심사의 분리를 허용함으로�
 
 
 
+#### AOP와 관심사의 상관관계
+
+{% hint style="info" %}
+**AOP와 관심사의 상관관계**\
+\
+AOP는 개발자가 구현하는 서비스 (주관심사)와, \
+별도로 필요한 부가적 기능(주관심사를 제외한 부관심사 , 인프라 로직)을 분리하여 개발자가 주관심사에 더 집중할 수 있도록 나온 **패러다임**이 AOP 인 것입니다.
+{% endhint %}
+
+
+
 ### OOP(Object Oriented Programming), 객체 지향 프로그래밍이란?
 
 
@@ -123,7 +134,20 @@ Spring AOP에서 사용하는 방식입니다.
 
 
 
+{% hint style="info" %}
+**Weaving?**\
+\
+AOP가 핵심 기능(Target)의 코드에 영향을 주지 않으면서 필요한 부가기능(어드바이스)를 추가할 수 있도록 해주는 핵심적인 처리 과정 입니다.\
+\+) 추가설명 요
+{% endhint %}
+
+
+
+
+
 **레퍼런스**
 
 [**https://amaran-th.github.io/Spring/\[Spring\]%20AOP/**](https://amaran-th.github.io/Spring/\[Spring]%20AOP/)\
-[**https://naveen-metta.medium.com/a-deep-dive-into-aop-in-spring-unveiling-the-power-of-aspect-oriented-programming-c6619aeb2dc4**](https://naveen-metta.medium.com/a-deep-dive-into-aop-in-spring-unveiling-the-power-of-aspect-oriented-programming-c6619aeb2dc4)
+[**https://naveen-metta.medium.com/a-deep-dive-into-aop-in-spring-unveiling-the-power-of-aspect-oriented-programming-c6619aeb2dc4**](https://naveen-metta.medium.com/a-deep-dive-into-aop-in-spring-unveiling-the-power-of-aspect-oriented-programming-c6619aeb2dc4)\
+\
+[**https://velog.io/@dnjwm8612/AOP-Weaving-Proxy**](https://velog.io/@dnjwm8612/AOP-Weaving-Proxy)
