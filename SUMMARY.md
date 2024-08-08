@@ -43,3 +43,4 @@
     * [JDBC](spring-data/undefined/jdbc.md)
     * [MyBatis](spring-data/undefined/mybatis.md)
     * [JPA](spring-data/undefined/jpa.md)
+* [Spring Authorization Server](spring-authorization-server.md)
