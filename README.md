@@ -1,7 +1,7 @@
-# 개요
+# dig into spring
+[dig-into-spring](https://dig-into-spring.gitbook.io/dig-into-spring)
 
-## dig into spring
-[dig-into-spring 사이트](https://dig-into-spring.gitbook.io/dig-into-spring)
+## 개요
 
 우리는 실무에서 자주 사용하는 스프링 프레임워크를 보다 전문성있게 사용하기 위해 스프링 공식문서를 참고하여 파헤쳐보았습니다.
 
