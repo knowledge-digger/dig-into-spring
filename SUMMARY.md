@@ -1,6 +1,6 @@
 # Table of contents
 
-* [개요](README.md)
+* [READ ME](README.md)
 * [🌱 Core Technologies](core-technologies/README.md)
   * [🌿 IoC 컨테이너](core-technologies/ioc.md)
   * [☘️ Spring AOP (Aspect-Oriented Programming)](core-technologies/spring-aop-aspect-oriented-programming.md)
