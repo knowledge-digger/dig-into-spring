@@ -1,2 +1,0 @@
-# Spring Authorization Server
-

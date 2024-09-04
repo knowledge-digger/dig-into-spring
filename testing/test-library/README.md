@@ -12,7 +12,7 @@ layout:
     visible: true
 ---
 
-# 테스트 라이브러리(Test Library)
+# 테스트 라이브러리
 
 ## **스프링 테스트 라이브러리** <a href="#spring-test-library" id="spring-test-library"></a>
 
@@ -29,7 +29,7 @@ dependencies {
 
 `spring-boot-starter-test`에는 다음과 같은 테스트 관련 라이브러리들이 포함되어 있습니다:
 
-* [Mockito (mockito-core)](mock-objects.md)
+* [Mockito (mockito-core)](mock-object.md)
 * JUnit 5 (JUnit Jupiter)
 * AssertJ
 * Hamcrest

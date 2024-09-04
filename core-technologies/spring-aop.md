@@ -2,7 +2,7 @@
 description: 이 페이지에서는 Spring AOP(Aspect-Oriented Programming)에 대해 설명합니다.
 ---
 
-# ☘️ Spring AOP (Aspect-Oriented Programming)
+# 스프링 AOP
 
 ## Spring AOP란?
 

@@ -1,2 +1,2 @@
-# 🌱 Core Technologies
+# Core Technologies
 

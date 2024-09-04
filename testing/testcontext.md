@@ -1,8 +1,8 @@
-# 테스트 컨텍스트 (TestContext)
+# 테스트 컨텍스트
 
 ## **테스트 컨텍스트 프레임워크(TextContext Framework) 란?**
 
-테스트에 필요한 [애플리케이션 컨텍스트](../core-technologies/ioc.md#applicationcontext)를 생성하고 관리를 제공하는 테스트 프레임워크입니다.
+테스트에 필요한 [애플리케이션 컨텍스트](../core-technologies/ioc-container.md#applicationcontext)를 생성하고 관리를 제공하는 테스트 프레임워크입니다.
 
 
 

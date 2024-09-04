@@ -55,4 +55,4 @@ description: 테스트 코드가 무엇인가? 왜 테스트 코드가 필요한
 * **Refactor**: 코드를 리팩토링하여 더 나은 구조로 만듭니다.\
 
 
-스프링 팀은 **테스트 주도 개발(TDD)을 권장**하며, [스프링 IoC 컨테이너](../core-technologies/ioc.md), 적절한 생성자, 및 setter 메서드를 활용하면 테스트를 보다 쉽게 수행할 수 있습니다.
+스프링 팀은 **테스트 주도 개발(TDD)을 권장**하며, [스프링 IoC 컨테이너](../core-technologies/ioc-container.md), 적절한 생성자, 및 setter 메서드를 활용하면 테스트를 보다 쉽게 수행할 수 있습니다.

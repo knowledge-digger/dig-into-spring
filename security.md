@@ -2,7 +2,7 @@
 description: Spring Security란?
 ---
 
-# 🔒 Copy of Security
+# Security
 
 짧게 서술하면 Spring에서 제공하는 애플리케이션의 <mark style="color:green;">**보안**</mark>을 담당하는 프레임워크입니다.\
 Spring 공식 문서에는 Security를 어떻게 설명하는지 한번 알아겠습니다.

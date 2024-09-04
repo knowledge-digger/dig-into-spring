@@ -2,7 +2,7 @@
 description: 이 페이지 에서는 IoC 컨테이너에 대해서 설명합니다.
 ---
 
-# 🌿 IoC 컨테이너
+# IoC 컨테이너
 
 ## Spring IoC (Inversion Of Control)이란?
 
