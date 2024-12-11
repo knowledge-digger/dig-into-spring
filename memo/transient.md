@@ -15,6 +15,46 @@ private transient String password;
 3. Jackson과 같은 JSON 직렬화 라이브러리에서는 기본적으로 무시되지만, Jackson을 커스터마이징하면 이를 포함하도록 설정할 수도 있다.
 4. **역직렬화** 시점에는 무시된 필드가 기본값(`null`, `0`, `false` 등)으로 초기화된다.
 
+## **transient 예제**
+
+```java
+import java.io.*;
+
+public class TransientExample implements Serializable {
+    private String username;
+    private transient String password;
+
+    public TransientExample(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public static void main(String[] args) throws IOException, ClassNotFoundException {
+        TransientExample user = new TransientExample("user1", "secret");
+
+        // 직렬화
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("user.ser"));
+        oos.writeObject(user);
+        oos.close();
+
+        // 역직렬화
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("user.ser"));
+        TransientExample deserializedUser = (TransientExample) ois.readObject();
+        ois.close();
+
+        System.out.println(deserializedUser.username); // user1
+        System.out.println(deserializedUser.password); // null (transient 필드)
+    }
+}
+```
+
+**결과:**
+
+* **직렬화**: `password`는 JSON 문자열에 포함되지 않음.
+* **역직렬화**: JSON 데이터의 `password` 필드는 무시되어 클래스 필드에 값이 설정되지 않음.
+
+위 예제처럼 직렬화(Serialize) 과정에서 제외하고 싶은 경우에 적용하면 된다.
+
 ## **@JsonIgnore와 차이**
 
 <table data-full-width="false"><thead><tr><th>특징</th><th>transient</th><th>@JsonIgnore</th></tr></thead><tbody><tr><td><strong>적용 범위</strong></td><td>Java 직렬화 (<code>Serializable</code>)</td><td>JSON 직렬화/역직렬화</td></tr><tr><td><strong>직렬화 대상에서의 동작</strong></td><td>해당 필드 무시</td><td>해당 필드 무시</td></tr><tr><td><strong>역직렬화 대상에서의 동작</strong></td><td>기본값(<code>null</code>, <code>0</code>, <code>false</code>)으로 설정</td><td>JSON 데이터에 필드가 있어도 무시</td></tr><tr><td><strong>JSON 데이터 반영 여부</strong></td><td>Jackson 기본 설정에서는 무시됨</td><td>명시적으로 JSON에 포함되지 않음</td></tr><tr><td><strong>유연성</strong></td><td>Java 직렬화에 국한됨</td><td>Jackson 기반으로 JSON 직렬화만 제한</td></tr></tbody></table>
