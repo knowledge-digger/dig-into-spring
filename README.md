@@ -1,17 +1,29 @@
-# READ ME
+---
+icon: hand-wave
+cover: https://gitbookio.github.io/onboarding-template-images/header.png
+coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
 
-우리는 실무에서 자주 사용하는 스프링 프레임워크를 보다 전문성있게 사용하기 위해 스프링 공식문서를 참고하여 파헤쳐보았습니다.
+# Welcome
 
-## version
+Welcome to the GitBook Starter Template! Here you'll get an overview of all the amazing features GitBook offers to help you build beautiful, interactive documentation.
 
-문서 작성에 사용한 버전은 다음과 같습니다\
-SpringBoot - 3.3.1\
-Java - jdk17
+You'll see some of the best parts of GitBook in action — and find help on how you can turn this template into your own.
 
-## example code
+### Jump right in
 
-사용한 예시 코드 - [https://github.com/knowledge-digger/dig-into-spring-code](https://github.com/knowledge-digger/dig-into-spring-code)
-
-## participants
-
-참여자 - [https://github.com/orgs/knowledge-digger/people](https://github.com/orgs/knowledge-digger/people)
+<table data-view="cards"><thead><tr><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td><strong>Getting Started</strong></td><td>Create your first site</td><td></td><td></td><td><a href="getting-started/quickstart.md">quickstart.md</a></td></tr><tr><td><strong>Basics</strong></td><td>Learn the basics of GitBook</td><td></td><td></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td><strong>Publish your docs</strong></td><td>Share your docs online</td><td></td><td></td><td><a href="getting-started/publish-your-docs.md">publish-your-docs.md</a></td></tr></tbody></table>
